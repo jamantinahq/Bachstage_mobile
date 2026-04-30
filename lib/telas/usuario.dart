@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'login.dart';
 
 class Perfil extends StatelessWidget {
   const Perfil({super.key});
@@ -38,7 +39,7 @@ class Perfil extends StatelessWidget {
 
             // email
             const Text(
-              "augusto@email.com",
+              "gutosousa002@gmail.com",
               style: TextStyle(fontSize: 16, color: Colors.grey),
             ),
             const SizedBox(height: 15),
@@ -47,7 +48,9 @@ class Perfil extends StatelessWidget {
               width: double.infinity,
               height: 55,
               child: OutlinedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushReplacementNamed(context, '/login');
+                },
                 style: OutlinedButton.styleFrom(
                   side: const BorderSide(color: Colors.red, width: 1.5),
                   shape: RoundedRectangleBorder(
