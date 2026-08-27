@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 import 'dart:io';
+=======
+>>>>>>> f053e02052f7b5fdeb3393a41ad71d0efe96d857
 import 'package:flutter/material.dart';
 
 class EventosCard extends StatelessWidget {
@@ -7,9 +10,12 @@ class EventosCard extends StatelessWidget {
   final String local;
   final String data;
   final String descricao;
+<<<<<<< HEAD
   final VoidCallback? onEditar;
   final VoidCallback? onExcluir;
   final VoidCallback? onFavoritar;
+=======
+>>>>>>> f053e02052f7b5fdeb3393a41ad71d0efe96d857
 
   const EventosCard({
     super.key,
@@ -18,6 +24,7 @@ class EventosCard extends StatelessWidget {
     required this.local,
     required this.data,
     required this.descricao,
+<<<<<<< HEAD
     this.onEditar,
     this.onExcluir,
     this.onFavoritar,
@@ -45,6 +52,10 @@ class EventosCard extends StatelessWidget {
     );
   }
 
+=======
+  });
+
+>>>>>>> f053e02052f7b5fdeb3393a41ad71d0efe96d857
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -53,7 +64,16 @@ class EventosCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+<<<<<<< HEAD
           _buildImagem(),
+=======
+          Image.asset(
+            imagem,
+            height: 200,
+            width: double.infinity,
+            fit: BoxFit.cover,
+          ),
+>>>>>>> f053e02052f7b5fdeb3393a41ad71d0efe96d857
           Padding(
             padding: const EdgeInsets.all(12),
             child: Column(
@@ -74,6 +94,7 @@ class EventosCard extends StatelessWidget {
                 Text(descricao),
                 Align(
                   alignment: Alignment.centerRight,
+<<<<<<< HEAD
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
@@ -96,6 +117,11 @@ class EventosCard extends StatelessWidget {
                           icon: const Icon(Icons.favorite, color: Colors.red),
                         ),
                     ],
+=======
+                  child: IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.favorite, color: Colors.red),
+>>>>>>> f053e02052f7b5fdeb3393a41ad71d0efe96d857
                   ),
                 ),
               ],

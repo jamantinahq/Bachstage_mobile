@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import '../controle/usuarioController.dart';
+=======
+>>>>>>> f053e02052f7b5fdeb3393a41ad71d0efe96d857
 
 class Splash extends StatefulWidget {
   const Splash({super.key});
@@ -13,6 +16,7 @@ class _Contador extends State<Splash> {
   void initState() {
     super.initState();
 
+<<<<<<< HEAD
     Future.delayed(const Duration(seconds: 3), () async {
       await verificarLogin();
     });
@@ -24,6 +28,11 @@ class _Contador extends State<Splash> {
     } else {
       Navigator.pushReplacementNamed(context, '/login');
     }
+=======
+    Future.delayed(const Duration(seconds: 3), () {
+      Navigator.pushReplacementNamed(context, '/login');
+    });
+>>>>>>> f053e02052f7b5fdeb3393a41ad71d0efe96d857
   }
 
   @override
